@@ -1,1 +1,0 @@
-# programlama-odevleri
