@@ -1,4 +1,3 @@
-
 print("HESAP MAKİNESİ")
 print("----------------------------")
 
@@ -13,7 +12,7 @@ print("4. Bölme (/)")
 print("5. Üs alma (**)")
 print("6. Tam bölme (//)")
 
-islem = input("Yapmak istediğiniz işlemi giriniz: ")
+islem = input("İşlemi giriniz (+, -, *, /, **, //): ")
 
 if islem == "+":
     sonuc = sayi1 + sayi2
@@ -32,7 +31,7 @@ elif islem == "/":
         sonuc = sayi1 / sayi2
         print("Sonuç:", sonuc)
     else:
-        print("Hata: Sıfıra bölme yapılamaz!")
+        print("Hata: Bir sayı sıfıra bölünemez.")
 
 elif islem == "**":
     sonuc = sayi1 ** sayi2
@@ -43,7 +42,7 @@ elif islem == "//":
         sonuc = sayi1 // sayi2
         print("Sonuç:", sonuc)
     else:
-        print("Hata: Sıfıra bölme yapılamaz!")
+        print("Hata: Bir sayı sıfıra bölünemez.")
 
 else:
-    print("Hatalı işlem seçtiniz!")
+    print("Geçersiz işlem.")
