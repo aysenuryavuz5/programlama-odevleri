@@ -1,36 +1,44 @@
-print("HESAP MAKİNESİ")
+# 1. Kullanıcıdan iki sayı alınır (ondalıklı olabileceği icin float kullanılmıstır)
+birinci_sayi = float(input("Birinci sayıyı giriniz: "))
+ikinci_sayi = float(input("İkinci sayıyı giriniz: "))
 
-sayi1 = float(input("Birinci sayıyı giriniz: "))
-sayi2 = float(input("İkinci sayıyı giriniz: "))
+# 2. Kullanıcıdan islem operatoru alınır
+islem = input("İslemi giriniz (+, -, *, /, **, //): ")
 
-islem = input("İşlemi giriniz (+, -, *, /, **, //): ")
-
+# 3, 4, 5 ve 6. Kosul ifadeleriyle islemlerin gerceklestirilmesi ve kontrolu
 if islem == "+":
-    sonuc = sayi1 + sayi2
-    print("Sonuç:", sonuc)
+    sonuc = birinci_sayi + ikinci_sayi
+    print(f"Sonuc: {sonuc}")
 
 elif islem == "-":
-    sonuc = sayi1 - sayi2
-    print("Sonuç:", sonuc)
+    sonuc = birinci_sayi - ikinci_sayi
+    print(f"Sonuc: {sonuc}")
 
 elif islem == "*":
-    sonuc = sayi1 * sayi2
-    print("Sonuç:", sonuc)
+    sonuc = birinci_sayi * ikinci_sayi
+    print(f"Sonuc: {sonuc}")
 
 elif islem == "/":
-    if sayi2 != 0:
-        print("Sonuç:", sayi1 / sayi2)
+    # Sıfıra bölme hatası kontrolü
+    if ikinci_sayi == 0:
+        print("Hata: Bir sayı sıfıra bolunemez.")
     else:
-        print("Hata: Bir sayı sıfıra bölünemez.")
-
-elif islem == "//":
-    if sayi2 != 0:
-        print("Sonuç:", sayi1 // sayi2)
-    else:
-        print("Hata: Bir sayı sıfıra bölünemez.")
+        sonuc = birinci_sayi / ikinci_sayi
+        print(f"Sonuc: {sonuc}")
 
 elif islem == "**":
-    print("Sonuç:", sayi1 ** sayi2)
+    sonuc = birinci_sayi ** ikinci_sayi
+    print(f"Sonuc: {sonuc}")
+
+elif islem == "//":
+    # Sıfıra bölme hatası kontrolü
+    if ikinci_sayi == 0:
+        print("Hata: Bir sayı sıfıra bolunemez.")
+    else:
+        sonuc = birinci_sayi // ikinci_sayi
+        print(f"Sonuc: {sonuc}")
 
 else:
-    print("Geçersiz işlem.")
+    # Listelenmeyen bir operator girildiğinde calısan kısım
+    print("Gecersiz islem.")
+
