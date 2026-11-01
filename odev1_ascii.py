@@ -1,15 +1,13 @@
-
-print("ASCII KARAKTER TABLOSU (0-127)")
-print("---------------------------------------")
+print("ASCII KARAKTER TABLOSU")
 print("ASCII KODU | KARAKTER")
-print("---------------------------------------")
+print("----------------------")
 
-for sayi in range(128):
-    if sayi < 32 or sayi == 127:
+for i in range(128):
+    if i <= 31 or i == 127:
         karakter = "Kontrol karakteri"
-    elif sayi == 32:
+    elif i == 32:
         karakter = "[boşluk]"
     else:
-        karakter = chr(sayi)
+        karakter = chr(i)
 
-    print(f"{sayi:<10} | {karakter}")
+    print(i, "|", karakter)
