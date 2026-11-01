@@ -1,4 +1,4 @@
-# 1. Kullanıcıdan iki sayı alınır (ondalıklı olabileceği icin float kullanılmıstır)
+# 1. Kullanıcıdan iki sayı alınır (ondalıklı olabilecegi icin float kullanılmıstır)
 birinci_sayi = float(input("Birinci sayıyı giriniz: "))
 ikinci_sayi = float(input("İkinci sayıyı giriniz: "))
 
@@ -19,7 +19,7 @@ elif islem == "*":
     print(f"Sonuc: {sonuc}")
 
 elif islem == "/":
-    # Sıfıra bölme hatası kontrolü
+    # Sıfıra bolme hatası kontrolu
     if ikinci_sayi == 0:
         print("Hata: Bir sayı sıfıra bolunemez.")
     else:
@@ -31,7 +31,7 @@ elif islem == "**":
     print(f"Sonuc: {sonuc}")
 
 elif islem == "//":
-    # Sıfıra bölme hatası kontrolü
+    # Sıfıra bolme hatası kontrolu
     if ikinci_sayi == 0:
         print("Hata: Bir sayı sıfıra bolunemez.")
     else:
@@ -39,6 +39,6 @@ elif islem == "//":
         print(f"Sonuc: {sonuc}")
 
 else:
-    # Listelenmeyen bir operator girildiğinde calısan kısım
+    # Listelenmeyen bir operator girildiginde calısan kısım
     print("Gecersiz islem.")
 
